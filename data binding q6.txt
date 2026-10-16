@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>First AngularJS App</title>
+    <script src="angular.min.js"></script>
+</head>
+
+<body ng-init="name='JavaScript'">
+
+    <p>{{ name }}</p>
+
+    <br/>
+
+    <span ng-bind="name"></span>
+
+    <br/>
+
+    <input ng-model="name">
+
+</body>
+</html>

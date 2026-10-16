@@ -1,0 +1,30 @@
+3. illustrates action on the occurrence of any Mouse Movement Event. This includes
+events of dragging the mouse to cause movement of the cursor on the screen.
+<!DOCTYPE html>
+<html>
+<head>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+</script>
+</head>
+<body>
+<p>
+Move the mouse over VARTAK COLLEGE
+to increase the Total Count.
+</p>
+<div ng-app="App1"
+ng-controller="Ctrl1">
+<h1 ng-mousemove="count = count + 1">
+VARTAK COLLEGE
+</h1>
+<h2>Total Count:</h2>
+<h2>{{ count }}</h2>
+</div>
+<script>
+var app = angular.module('App1', []);
+app.controller('Ctrl1', function($scope) {
+$scope.count = 0;
+});
+</script>
+</body>
+</html>
